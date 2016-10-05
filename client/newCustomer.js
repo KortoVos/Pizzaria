@@ -1,12 +1,6 @@
 
 Customer = new Mongo.Collection("Customer");
 
-Customer.allow({
-  insert: function(userId,doc){
-    return !!userId;
-  }
-});
-
 Customer.attachSchema(new SimpleSchema({
   firstName: {
     type: String,
@@ -42,15 +36,5 @@ Customer.attachSchema(new SimpleSchema({
     type: String,
     label: "Ort",
     max: 40
-  },
-  author: {
-    type: String,
-    label: "author",
-    autoValue: function(){
-      return this.userId;
-    },
-    autoform:{
-      type:"hidden"
-    }
   }
 }));
