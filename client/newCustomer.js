@@ -1,5 +1,5 @@
 
-Customer = new Mongo.Collection("Customer");
+Customer = new Meteor.Collection("Customer");
 
 Customer.allow({
   insert: function(userId,doc){
