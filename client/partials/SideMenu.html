@@ -1,0 +1,25 @@
+<template name="sideMenu">
+  <div class="card-panel indigo-text text-lighten-5 indigo darken-2">
+    <div class="row">
+      <a href="/recipe-book" class="">
+        <div class="col s12 card-panel indigo-text text-lighten-1 indigo lighten-2 waves-effect waves-light ">
+          <div class="card-image"><i class="large fa fa-pie-chart"></i></div> Gerichte
+        </div>
+      </a>
+
+      <a href="/customerlist" class="">
+        <div class="col s12 card-panel indigo-text text-lighten-1 indigo lighten-2 waves-effect waves-light ">
+          <div class="card-image"><i class="large fa fa-users"></i></div> Kunden
+        </div>
+      </a>
+
+      <a href="/orderlist" class="">
+        <div class="col s12 card-panel indigo-text text-lighten-1 indigo lighten-2 waves-effect waves-light ">
+          <div class="card-image"><i class="large fa fa-reply-all"></i></div> Orders
+        </div>
+      </a>
+
+      {{> loginButtons}}
+    </div>
+  </div>
+</template>

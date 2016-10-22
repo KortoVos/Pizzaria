@@ -3,6 +3,9 @@ Customer = new Mongo.Collection('customer');
 Customer.allow({
 	insert: function(userId,doc){
 		return !!userId;
+	},
+	update: function(userId,doc){
+		return !!userId;
 	}
 });
 
@@ -23,6 +26,10 @@ CustomerSchema = new SimpleSchema({
 	surname: {
 		type: String,
 		label: "Nachname"
+	},
+	Phone:{
+		type: String,
+		label: "Tel.Nr"
 	},
 	Address:{
 		type: [Address]

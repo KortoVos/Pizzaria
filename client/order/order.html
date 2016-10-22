@@ -1,13 +1,7 @@
 <template name="Order">
-	<section class="orders">
-		<div class="row">
-			{{#each order}}
-					<div class="col s6 m4 l3">
-	        			<div class="card-panel">
-							{{_id}}
-						</div>
-					</div>
-			{{/each}}
+	<div class="card-panel">
+		<div class="new-order-container">
+			{{> quickForm collection="Order" id="updateOrder" type="update" doc=order}}
 		</div>
-	</section>
+	</div>
 </template>

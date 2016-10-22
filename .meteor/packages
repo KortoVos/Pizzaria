@@ -20,19 +20,27 @@ shell-server@0.2.1             # Server-side component of the `meteor shell` com
 
 fourseven:scss
 materialize:materialize@0.97.7
+gildaspk:autoform-materialize
+useraccounts:materialize
+
+aldeed:collection2
+aldeed:autoform
+aldeed:autoform-select2
+natestrauser:select2 
 
 kadira:flow-router
 kadira:blaze-layout
 erasaur:meteor-lodash
 fortawesome:fontawesome
-spiderable
-fastclick
+# spiderable
+# fastclick
 raix:handlebar-helpers
-aldeed:collection2
-aldeed:autoform
+
 accounts-ui
 accounts-password
 matb33:bootstrap-glyphicons
 zimme:active-route
 gwendall:auth-client-callbacks
 meteortoys:allthings
+
+check

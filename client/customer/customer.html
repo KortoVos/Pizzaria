@@ -1,3 +1,7 @@
 <template name="Customer">
-	{{> NewCustomer}}
+	<div class="card-panel">
+		<div class="new-recipe-container">
+			{{> quickForm collection="Customer" id="updateCustomer" type="update" doc=customer}} 
+		</div>
+	</div>
 </template>

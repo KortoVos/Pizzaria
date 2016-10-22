@@ -1,28 +1,23 @@
-<template name="Recipes">
-	<section class="recipes">
+<template name="CustomerList">
+	<section class="customer">
 		<div class="row">
-			{{#each recipes}}
+			{{#each customers}}
 					<div class="col s12 m6 l3">
 	        			<div class="card hoverable indigo lighten-5">
 	        				<div class="card-content">
 	        					<div class="row">
 	        						<div class="row">
-	        							<div class="col s6"><h4 class="left-align">{{name}}</h4></div>
-										{{#if price}}<div class="col s6"><p class="right-align">{{price}}€</p></div>{{/if}}
+	        							<div class="col s12"><h4 class="left-align">{{firstname}} - {{surname}}</h4></div>
 									</div>
 									<table class="highlight">
-									{{#each ingredient}}
-
 										<tr>
-											<td>{{name}}</td>
-											<td>{{amount}}</td>
+											<td>{{Phone}}</td>
 										</tr>
-									{{/each}}
 									</table>
 								</div>
 							</div>
 							<div class="card-action">
-								<a class="waves-effect waves-light btn" href="/recipe/{{_id}}"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>Bearbeiten</a>
+								<a class="waves-effect waves-light btn" href="/customer/{{_id}}"><i class="fa fa-pencil btn-icon" aria-hidden="true"></i>Bearbeiten</a>
 							</div>
 						</div>
 					</div>
@@ -30,7 +25,7 @@
 		</div>
 	</section>
 	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red" href="/newrecipe">
+    <a class="btn-floating btn-large red" href="/newcustomer">
       <i class="large fa fa-plus"></i>
     </a>
 	</div>
